@@ -9,31 +9,31 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar:  AppBar(
-        title: Text('Flutter Image App'),
-      ),
-      body: Column(
-        children: [
-        Center(
-        child: Text(
-          'Hello, World!',
-          style: TextStyle(
-            fontSize: 24,
-            color: Colors.red,
-            fontWeight: FontWeight.bold,
-          ),
+        appBar: AppBar(
+          title: Text('Flutter Image App'),
         ),
-      ),
-       Center(
-        child: Image.asset(
-          'assets/Images/Entity.jpg',
-          width: 300,
-          height: 300,
-          alignment: Alignment.center,
-        ),
-      ),
-      ],
-      )
-    );
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Center(
+              child: Text(
+                'Hello, World!',
+                style: TextStyle(
+                  fontSize: 24,
+                  color: Colors.red,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            Center(
+              child: Image.asset(
+                'assets/Images/Entity.jpg',
+                width: 300,
+                height: 300,
+                alignment: Alignment.center,
+              ),
+            ),
+          ],
+        ));
   }
 }
